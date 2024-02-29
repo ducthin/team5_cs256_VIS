@@ -11,7 +11,7 @@ package NGUYENQUOCTRUNG_4426;
 public class ThucHanh1 {
     public static void main(String[] args) {
         Menu frm = new Menu(); //Create New Form
-        frm.setLocationRelativeTo(null); //form -> center
+        frm.setLocationRelativeTo(null); //form center
         frm.setVisible(true);  //Display
     }
 }

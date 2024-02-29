@@ -31,13 +31,13 @@ public class Menu extends javax.swing.JFrame {
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenu2 = new javax.swing.JMenu();
-        jMenu4 = new javax.swing.JMenu();
-        jMenuItem1 = new javax.swing.JMenuItem();
-        jMenuItem2 = new javax.swing.JMenuItem();
-        jMenuItem3 = new javax.swing.JMenuItem();
-        jMenuItem4 = new javax.swing.JMenuItem();
+        function = new javax.swing.JMenu();
+        tong = new javax.swing.JMenuItem();
+        hieu = new javax.swing.JMenuItem();
+        tich = new javax.swing.JMenuItem();
+        thuong = new javax.swing.JMenuItem();
         jMenu5 = new javax.swing.JMenu();
-        jMenu6 = new javax.swing.JMenu();
+        exit = new javax.swing.JMenu();
 
         jMenu3.setText("jMenu3");
 
@@ -53,89 +53,89 @@ public class Menu extends javax.swing.JFrame {
         jMenu2.setText("Edit");
         jMenuBar1.add(jMenu2);
 
-        jMenu4.setText("Function");
+        function.setText("Function");
 
-        jMenuItem1.setText("Tinh Tong");
-        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+        tong.setText("Tinh Tong");
+        tong.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem1ActionPerformed(evt);
+                tongActionPerformed(evt);
             }
         });
-        jMenu4.add(jMenuItem1);
+        function.add(tong);
 
-        jMenuItem2.setText("Tinh Hieu");
-        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
+        hieu.setText("Tinh Hieu");
+        hieu.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem2ActionPerformed(evt);
+                hieuActionPerformed(evt);
             }
         });
-        jMenu4.add(jMenuItem2);
+        function.add(hieu);
 
-        jMenuItem3.setText("Tinh Tich");
-        jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
+        tich.setText("Tinh Tich");
+        tich.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem3ActionPerformed(evt);
+                tichActionPerformed(evt);
             }
         });
-        jMenu4.add(jMenuItem3);
+        function.add(tich);
 
-        jMenuItem4.setText("Tinh Thuong");
-        jMenuItem4.addActionListener(new java.awt.event.ActionListener() {
+        thuong.setText("Tinh Thuong");
+        thuong.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem4ActionPerformed(evt);
+                thuongActionPerformed(evt);
             }
         });
-        jMenu4.add(jMenuItem4);
+        function.add(thuong);
 
-        jMenuBar1.add(jMenu4);
+        jMenuBar1.add(function);
 
         jMenu5.setText("Help");
         jMenuBar1.add(jMenu5);
 
-        jMenu6.setText("Exit");
-        jMenu6.addActionListener(new java.awt.event.ActionListener() {
+        exit.setText("Exit");
+        exit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenu6ActionPerformed(evt);
+                exitActionPerformed(evt);
             }
         });
-        jMenuBar1.add(jMenu6);
+        jMenuBar1.add(exit);
 
         setJMenuBar(jMenuBar1);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
+    private void tichActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tichActionPerformed
         //Tich
         TinhTich frm = new TinhTich();
         frm.setLocationRelativeTo(null);
         frm.setVisible(true);
-    }//GEN-LAST:event_jMenuItem3ActionPerformed
+    }//GEN-LAST:event_tichActionPerformed
 
-    private void jMenu6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu6ActionPerformed
+    private void exitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exitActionPerformed
         System.exit(0);
-    }//GEN-LAST:event_jMenu6ActionPerformed
+    }//GEN-LAST:event_exitActionPerformed
 
-    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+    private void tongActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tongActionPerformed
         //Tong
         TinhTong frm = new TinhTong();
         frm.setLocationRelativeTo(null);
         frm.setVisible(true);
-    }//GEN-LAST:event_jMenuItem1ActionPerformed
+    }//GEN-LAST:event_tongActionPerformed
 
-    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
+    private void hieuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hieuActionPerformed
         // Hieu
         TinhHieu frm = new TinhHieu();
         frm.setLocationRelativeTo(null);
         frm.setVisible(true);
-    }//GEN-LAST:event_jMenuItem2ActionPerformed
+    }//GEN-LAST:event_hieuActionPerformed
 
-    private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
+    private void thuongActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_thuongActionPerformed
         //Thuong
         TinhThuong frm = new TinhThuong();
         frm.setLocationRelativeTo(null);
         frm.setVisible(true);
-    }//GEN-LAST:event_jMenuItem4ActionPerformed
+    }//GEN-LAST:event_thuongActionPerformed
 
     /**
      * @param args the command line arguments
@@ -174,16 +174,16 @@ public class Menu extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel anh;
+    private javax.swing.JMenu exit;
+    private javax.swing.JMenu function;
+    private javax.swing.JMenuItem hieu;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
-    private javax.swing.JMenu jMenu4;
     private javax.swing.JMenu jMenu5;
-    private javax.swing.JMenu jMenu6;
     private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JMenuItem jMenuItem1;
-    private javax.swing.JMenuItem jMenuItem2;
-    private javax.swing.JMenuItem jMenuItem3;
-    private javax.swing.JMenuItem jMenuItem4;
+    private javax.swing.JMenuItem thuong;
+    private javax.swing.JMenuItem tich;
+    private javax.swing.JMenuItem tong;
     // End of variables declaration//GEN-END:variables
 }
