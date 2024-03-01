@@ -1,5 +1,7 @@
 package thuchanh1;
 
+import java.awt.Desktop;
+import java.net.URI;
 import javax.swing.Icon;
 import javax.swing.JOptionPane;
 
@@ -37,6 +39,7 @@ public class FormChinh extends javax.swing.JFrame {
         jMenuItem7 = new javax.swing.JMenuItem();
         jMenuItem8 = new javax.swing.JMenuItem();
         jMenu12 = new javax.swing.JMenu();
+        link = new javax.swing.JMenuItem();
 
         jMenu1.setText("jMenu1");
 
@@ -73,6 +76,11 @@ public class FormChinh extends javax.swing.JFrame {
         jMenu3.setText("Hệ thống");
 
         jMenuItem2.setText("Thoát");
+        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem2ActionPerformed(evt);
+            }
+        });
         jMenu3.add(jMenuItem2);
 
         jMenuBar1.add(jMenu3);
@@ -114,6 +122,15 @@ public class FormChinh extends javax.swing.JFrame {
         jMenuBar1.add(jMenu11);
 
         jMenu12.setText("Trợ giúp");
+
+        link.setText("Help");
+        link.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                linkActionPerformed(evt);
+            }
+        });
+        jMenu12.add(link);
+
         jMenuBar1.add(jMenu12);
 
         setJMenuBar(jMenuBar1);
@@ -135,24 +152,49 @@ public class FormChinh extends javax.swing.JFrame {
     private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
         // TODO add your handling code here:
         FormCong formCong = new FormCong();
+        formCong.setLocationRelativeTo(null);
         formCong.setVisible(true);
     }//GEN-LAST:event_jMenuItem5ActionPerformed
 
     private void jMenuItem6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem6ActionPerformed
         // TODO add your handling code here:
         FormTru formTru = new FormTru();
+        formTru.setLocationRelativeTo(null);
         formTru.setVisible(true);
     }//GEN-LAST:event_jMenuItem6ActionPerformed
 
     private void jMenuItem7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem7ActionPerformed
         // TODO add your handling code here:
-        JOptionPane.showMessageDialog(null, "Chức năng này chưa thực hiện được", "THÔNG BÁO", 1);
+        FormNhan formNhan = new FormNhan();
+        formNhan.setLocationRelativeTo(null);
+        formNhan.setVisible(true);
     }//GEN-LAST:event_jMenuItem7ActionPerformed
 
     private void jMenuItem8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem8ActionPerformed
         // TODO add your handling code here:
-        JOptionPane.showMessageDialog(null, "Chức năng này chưa thực hiện được", "THÔNG BÁO", 1);
+        FormChia formChia = new FormChia();
+        formChia.setLocationRelativeTo(null);
+        formChia.setVisible(true);
     }//GEN-LAST:event_jMenuItem8ActionPerformed
+
+    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
+        // TODO add your handling code here:
+        System.exit(0);
+    }//GEN-LAST:event_jMenuItem2ActionPerformed
+
+    private void linkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_linkActionPerformed
+        // TODO add your handling code here:
+        String url = "https://www.facebook.com/nghiaIee/";
+    
+        if (Desktop.isDesktopSupported()) {
+            Desktop desktop = Desktop.getDesktop();
+            try {
+                desktop.browse(new URI(url));
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+    }//GEN-LAST:event_linkActionPerformed
 
     /**
      * @param args the command line arguments
@@ -184,7 +226,9 @@ public class FormChinh extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new FormChinh().setVisible(true);
+                FormChinh formChinh = new FormChinh();
+                formChinh.setLocationRelativeTo(null);
+                formChinh.setVisible(true);
             }
         });
     }
@@ -214,5 +258,6 @@ public class FormChinh extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem6;
     private javax.swing.JMenuItem jMenuItem7;
     private javax.swing.JMenuItem jMenuItem8;
+    private javax.swing.JMenuItem link;
     // End of variables declaration//GEN-END:variables
 }
