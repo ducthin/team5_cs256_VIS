@@ -18,6 +18,7 @@ public class ThucHanh1 {
         // TODO code application logic here
         FormChinh frm = new FormChinh();
         frm.setVisible(true);
+        frm.setLocationRelativeTo(null);
     }
     
 }
