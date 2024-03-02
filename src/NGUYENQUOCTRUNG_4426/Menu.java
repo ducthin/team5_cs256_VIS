@@ -38,6 +38,7 @@ public class Menu extends javax.swing.JFrame {
         thuong = new javax.swing.JMenuItem();
         jMenu5 = new javax.swing.JMenu();
         exit = new javax.swing.JMenu();
+        jMenuItem1 = new javax.swing.JMenuItem();
 
         jMenu3.setText("jMenu3");
 
@@ -98,6 +99,15 @@ public class Menu extends javax.swing.JFrame {
                 exitActionPerformed(evt);
             }
         });
+
+        jMenuItem1.setText("Exit");
+        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem1ActionPerformed(evt);
+            }
+        });
+        exit.add(jMenuItem1);
+
         jMenuBar1.add(exit);
 
         setJMenuBar(jMenuBar1);
@@ -113,7 +123,7 @@ public class Menu extends javax.swing.JFrame {
     }//GEN-LAST:event_tichActionPerformed
 
     private void exitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exitActionPerformed
-        System.exit(0);
+      
     }//GEN-LAST:event_exitActionPerformed
 
     private void tongActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tongActionPerformed
@@ -136,6 +146,11 @@ public class Menu extends javax.swing.JFrame {
         frm.setLocationRelativeTo(null);
         frm.setVisible(true);
     }//GEN-LAST:event_thuongActionPerformed
+
+    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+        // TODO add your handling code here:
+        System.exit(0);
+    }//GEN-LAST:event_jMenuItem1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -182,6 +197,7 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenu jMenu5;
     private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem thuong;
     private javax.swing.JMenuItem tich;
     private javax.swing.JMenuItem tong;

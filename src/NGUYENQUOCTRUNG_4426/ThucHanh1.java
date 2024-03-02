@@ -11,6 +11,7 @@ package NGUYENQUOCTRUNG_4426;
 public class ThucHanh1 {
     public static void main(String[] args) {
         Menu frm = new Menu(); //Create New Form
+        frm.setTitle("Bai Thuc Hanh So 1."); // Title 
         frm.setLocationRelativeTo(null); //form center
         frm.setVisible(true);  //Display
     }

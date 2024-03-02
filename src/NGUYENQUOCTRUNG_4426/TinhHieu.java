@@ -35,9 +35,12 @@ public class TinhHieu extends javax.swing.JFrame {
         jTextPane1 = new javax.swing.JTextPane();
         jTextField4 = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
+        Exit1 = new javax.swing.JButton();
+        Exit2 = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         jLayeredPane1 = new javax.swing.JLayeredPane();
         jLabel1 = new javax.swing.JLabel();
+        Exit3 = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
@@ -71,6 +74,21 @@ public class TinhHieu extends javax.swing.JFrame {
 
         jButton1.setText("jButton1");
 
+        Exit1.setBackground(new java.awt.Color(255, 0, 51));
+        Exit1.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        Exit1.setForeground(new java.awt.Color(255, 255, 255));
+        Exit1.setText("X");
+        Exit1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Exit1ActionPerformed(evt);
+            }
+        });
+
+        Exit2.setBackground(new java.awt.Color(255, 0, 51));
+        Exit2.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        Exit2.setForeground(new java.awt.Color(255, 255, 255));
+        Exit2.setText("X");
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(11, 12, 16));
 
@@ -100,6 +118,15 @@ public class TinhHieu extends javax.swing.JFrame {
                 .addGap(0, 14, Short.MAX_VALUE))
         );
 
+        Exit3.setBackground(new java.awt.Color(255, 0, 51));
+        Exit3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        Exit3.setText("X");
+        Exit3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Exit3ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -107,14 +134,18 @@ public class TinhHieu extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(94, 94, 94)
                 .addComponent(jLayeredPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(Exit3, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(21, Short.MAX_VALUE)
+                .addContainerGap(27, Short.MAX_VALUE)
                 .addComponent(jLayeredPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addComponent(Exit3, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         jPanel2.setBackground(new java.awt.Color(11, 12, 16));
@@ -302,6 +333,16 @@ public class TinhHieu extends javax.swing.JFrame {
         Result.setText("");
     }//GEN-LAST:event_RetypeActionPerformed
 
+    private void Exit1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Exit1ActionPerformed
+        // TODO add your handling code here:
+        this.setVisible(false); //close form hien thoi
+    }//GEN-LAST:event_Exit1ActionPerformed
+
+    private void Exit3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Exit3ActionPerformed
+        // TODO add your handling code here:
+        this.setVisible(false); //close form hien thoi
+    }//GEN-LAST:event_Exit3ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -342,6 +383,9 @@ public class TinhHieu extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton Enter;
+    private javax.swing.JButton Exit1;
+    private javax.swing.JButton Exit2;
+    private javax.swing.JButton Exit3;
     private javax.swing.JLabel Result;
     private javax.swing.JButton Retype;
     private javax.swing.JTextField S1;
