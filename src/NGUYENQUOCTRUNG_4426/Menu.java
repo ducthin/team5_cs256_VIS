@@ -30,15 +30,19 @@ public class Menu extends javax.swing.JFrame {
         anh = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
+        jMenuItem1 = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
+        jMenuItem2 = new javax.swing.JMenuItem();
+        jMenuItem3 = new javax.swing.JMenuItem();
+        jMenuItem4 = new javax.swing.JMenuItem();
+        jMenuItem5 = new javax.swing.JMenuItem();
         function = new javax.swing.JMenu();
         tong = new javax.swing.JMenuItem();
         hieu = new javax.swing.JMenuItem();
         tich = new javax.swing.JMenuItem();
         thuong = new javax.swing.JMenuItem();
         jMenu5 = new javax.swing.JMenu();
-        exit = new javax.swing.JMenu();
-        jMenuItem1 = new javax.swing.JMenuItem();
+        jMenuItem6 = new javax.swing.JMenuItem();
 
         jMenu3.setText("jMenu3");
 
@@ -49,9 +53,31 @@ public class Menu extends javax.swing.JFrame {
         getContentPane().add(anh, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 520, 280));
 
         jMenu1.setText("File");
+
+        jMenuItem1.setText("Exit");
+        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem1ActionPerformed(evt);
+            }
+        });
+        jMenu1.add(jMenuItem1);
+
         jMenuBar1.add(jMenu1);
 
         jMenu2.setText("Edit");
+
+        jMenuItem2.setText("Cut");
+        jMenu2.add(jMenuItem2);
+
+        jMenuItem3.setText("Copy");
+        jMenu2.add(jMenuItem3);
+
+        jMenuItem4.setText("Paste");
+        jMenu2.add(jMenuItem4);
+
+        jMenuItem5.setText("Delete");
+        jMenu2.add(jMenuItem5);
+
         jMenuBar1.add(jMenu2);
 
         function.setText("Function");
@@ -91,24 +117,16 @@ public class Menu extends javax.swing.JFrame {
         jMenuBar1.add(function);
 
         jMenu5.setText("Help");
+
+        jMenuItem6.setText("Sos ");
+        jMenuItem6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem6ActionPerformed(evt);
+            }
+        });
+        jMenu5.add(jMenuItem6);
+
         jMenuBar1.add(jMenu5);
-
-        exit.setText("Exit");
-        exit.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                exitActionPerformed(evt);
-            }
-        });
-
-        jMenuItem1.setText("Exit");
-        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem1ActionPerformed(evt);
-            }
-        });
-        exit.add(jMenuItem1);
-
-        jMenuBar1.add(exit);
 
         setJMenuBar(jMenuBar1);
 
@@ -121,10 +139,6 @@ public class Menu extends javax.swing.JFrame {
         frm.setLocationRelativeTo(null);
         frm.setVisible(true);
     }//GEN-LAST:event_tichActionPerformed
-
-    private void exitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exitActionPerformed
-      
-    }//GEN-LAST:event_exitActionPerformed
 
     private void tongActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tongActionPerformed
         //Tong
@@ -151,6 +165,10 @@ public class Menu extends javax.swing.JFrame {
         // TODO add your handling code here:
         System.exit(0);
     }//GEN-LAST:event_jMenuItem1ActionPerformed
+
+    private void jMenuItem6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem6ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -189,7 +207,6 @@ public class Menu extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel anh;
-    private javax.swing.JMenu exit;
     private javax.swing.JMenu function;
     private javax.swing.JMenuItem hieu;
     private javax.swing.JMenu jMenu1;
@@ -198,6 +215,11 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu5;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JMenuItem jMenuItem2;
+    private javax.swing.JMenuItem jMenuItem3;
+    private javax.swing.JMenuItem jMenuItem4;
+    private javax.swing.JMenuItem jMenuItem5;
+    private javax.swing.JMenuItem jMenuItem6;
     private javax.swing.JMenuItem thuong;
     private javax.swing.JMenuItem tich;
     private javax.swing.JMenuItem tong;
